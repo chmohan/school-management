@@ -1,0 +1,71 @@
+
+<div class="form-group" style="padding-right:20%;padding-left:20%;">
+<fieldset>
+
+
+    
+    <form name="registrationForm" ng-submit="registrationController.saveData(registrationFormData)" class="form-horizontal" role="form">
+        
+<div style="float:left;width:50%;">
+   <fieldset> 
+     <legend>Student Info</legend>
+<table> 
+<tr><td><label for="name">Name:</label></td><td><input type="text" id="name" required ng-model="registrationFormData.name"/></td></tr>
+<tr><td><label for="lastName">Last Name:</label></td><td><input type="text" id="lastName"  ng-model="registrationFormData.lastName"/></td></tr>    
+
+<tr><td><label for="dateOfBirth">Date of Birth:</label></td><td><input type="date"  id="dateOfBirth" 
+                                                                           ng-model="registrationFormData.dateOfBirth"/></td></tr>
+    
+<tr><td><label for="PlaceOfBirth">Place of Birth:</label></td><td><input type="text"  id="PlaceOfBirth"  
+                                                                         ng-model="registrationFormData.placeOfBirth"/></td></tr>
+<tr><td><label for="gender">Gender:</label></td><td><input type="radio" id="gender"    value="Male" ng-model="registrationFormData.gender"/><label>Male</label><input type="radio"  id="gender" ng-model="registrationFormData.gender" value="Female"/><label>Female</label></td></tr>
+    
+<tr><td><label for="studentAddress">Address:</label></td><td><textarea id="studentAddress" ng-model="registrationFormData.studentAddress"></textarea></td></tr>    
+<tr><td><label for="status">Status:</label></td><td><input type="radio"  id="status" ng-model="registrationFormData.status" value="Single"/><label>Single</label>
+    <input type="radio"  id="status" ng-model="registrationFormData.status" value="Married"/><label>Married</label></td></tr>    
+
+</table>
+ </fieldset>
+</div>
+        <div style="float:left;width:50%;">
+            <div>  
+                <fieldset>
+                    <legend>Eductaion Infomartion</legend>
+                    
+    <table>
+    <tr>
+    <td><label for="year">Year</label></td><td><input type="text" ng-model="registrationFormData.year"/></td>    
+    </tr>        
+     <tr>
+    <td><label for="schoolYear">School Year</label></td><td><input type="text" ng-model="registrationFormData.schoolYear"/></td>    
+    </tr>        
+   
+            
+            </table>
+                </fieldset>
+                
+                </div>
+            <div>
+            <fieldset>
+                <legend>Guardian Information</legend>
+                <table>
+                <tr><td><label for="name">Nmae:</label></td><td><input input="text" ng-model="registrationFormData.guardianName"/></td></tr>
+                <tr><td><label for="relation">Relation:</label></td><td><input input="text" ng-model="registrationFormData.guardianRelation"/></td></tr>
+                <tr><td><label for="address">Address:</label></td><td><input input="text" ng-model="registrationFormData.guadianAddress"/></td></tr>
+              <tr><td><label for="contact">Contact:</label></td><td><input input="text" ng-model="registrationFormData.guadianContact"/></td></tr>        
+                
+                </table>
+                
+                </fieldset>
+            </div>
+
+        </div>
+<div style="text-aline:center;float:right;" >
+    <button type="submit"  class="btn btn-primary" value="Save">Save</button>
+    <button type="reset"  class="btn btn-default" value="Reset">Reset</button>
+        </div>
+        
+                </form>
+    </fieldset>
+    </div>
+    
